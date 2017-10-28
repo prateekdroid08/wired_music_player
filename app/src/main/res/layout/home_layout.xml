@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:id="@+id/botton_list_main"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_below="@+id/music_top_layout_linear">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5d5958"
+            android:id="@+id/music_button"
+            android:text="Music"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5d5958"
+            android:id="@+id/video_button"
+            android:text="Video"
+            android:layout_marginLeft="2dp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#5d5958"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/all_song_button"
+            android:text="All Songs"
+            android:layout_marginRight="2dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/edittext_main_layout"
+        android:layout_below="@+id/botton_list_main"
+        android:layout_height="30dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittextshape"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/music_serach_icon"
+                android:src="@drawable/search_icon"/>
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#ffffff"
+                android:hint="Search.."
+                android:singleLine="true"
+                android:textColorHint="#ac6f7c"
+                android:textSize="18sp"
+                android:id="@+id/search"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

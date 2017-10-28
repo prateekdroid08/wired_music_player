@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#263238">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/song_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:id="@+id/widget_song_name"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/player_previous"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bar_selector_white"
+                android:scaleType="center"
+                android:src="@drawable/ic_rew_dark"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/player_pause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bar_selector_white"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_pause"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/player_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bar_selector_white"
+                android:scaleType="center"
+                android:src="@drawable/ic_action_play"
+                android:visibility="gone"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/player_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bar_selector_white"
+                android:scaleType="center"
+                android:src="@drawable/ic_fwd_dark"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/speed"
+        android:title="Speed">
+
+        <menu>
+            <item android:title="slow"
+                android:id="@+id/video_slow1"></item>
+            <item android:title="Normal"
+                android:id="@+id/video_normal"></item>
+            <item android:title="fast"
+                android:id="@+id/video_fast1"></item>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/zoom"
+        android:title="Zoom">
+        <menu>
+            <item android:title="Fit to screen"
+                android:id="@+id/video_fit"></item>
+            <item android:title="Stretch"
+                android:id="@+id/video_stretch"></item>
+            <item android:title="100%"
+                android:id="@+id/video_100"></item>
+            <item android:title="150%"
+                android:id="@+id/video_150"></item>
+            <item android:title="200%"
+                android:id="@+id/video_200"></item>
+
+        </menu>
+
+
+    </item>
+
+</menu>

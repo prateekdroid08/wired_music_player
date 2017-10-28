@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/addtoplaylist"
+        android:title="Add to playlist" />
+    <item
+        android:id="@+id/addtofavorites"
+        android:title="Add to Favorites" />
+    <item
+        android:id="@+id/share"
+        android:title="Share" />
+    <item
+        android:id="@+id/delete"
+        android:title="Delete" >
+
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:HTMLCode="http://schemas.android.com/apk/res-auto" >
+            <item android:id="@+id/single"
+                android:title="single"/>
+
+            <item android:id="@+id/multi"
+                android:title="multi-select"
+                HTMLCode:showAsAction="ifRoom|withText" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/setasringtone"
+        android:title="Set as Ringtone" />
+
+
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dragView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_songAlbumbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/drawer_header"
+        android:visibility="invisible"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <include
+                android:id="@+id/slidepanelchildtwo_topviewone"
+                layout="@layout/include_slidepanelchildtwo_topviewone"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <include
+                android:id="@+id/slidepanelchildtwo_topviewtwo"
+                layout="@layout/include_slidepanelchildtwo_topviewtwo"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/relative_layout"
+                android:layout_above="@+id/bottom_palyLayout">
+
+                <ImageView
+                    android:id="@+id/image_songAlbumbg_mid"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/drawer_header"
+                    android:visibility="visible">
+                </ImageView>
+
+                <View
+                    android:id="@+id/vBgLike"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:visibility="invisible" />
+                <ImageView
+                    android:id="@+id/ivLike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/selector_favorite2"
+                    android:visibility="invisible" />
+
+                <com.avfplayer.uicomponent.Slider
+                    android:id="@+id/audio_progress_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/image_songAlbumbg_mid"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffff"
+                    app:max="100"
+                    app:min="0" />
+
+            </RelativeLayout>
+
+
+            <include
+                android:id="@+id/bottom_palyLayout"
+                layout="@layout/include_slidepanelchildtwo_bottomview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
