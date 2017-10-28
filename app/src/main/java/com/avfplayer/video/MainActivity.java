@@ -61,8 +61,12 @@ public class MainActivity extends AppCompatActivity {
         info2 = new AllAudioVideoInfo();
         info2.setIndex(1);
 
-        Intent intent = getIntent();
-        index = intent.getExtras().getInt("index");
+        try {
+            Intent intent = getIntent();
+            index = intent.getExtras().getInt("index");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
         //clearFragment();
         new Thread(new Runnable() {
